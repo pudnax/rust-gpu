@@ -13,7 +13,7 @@ use-installed-tools = ["spirv-builder/use-installed-tools"]
 use-compiled-tools = ["spirv-builder/use-compiled-tools"]
 
 [dependencies]
-ash = "0.32"
+ash = "0.33"
 ash-window = "0.6"
 winit = "0.25.0"
 serde = { version = "1.0", features = ["derive"] }
