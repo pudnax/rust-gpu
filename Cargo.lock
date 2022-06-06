@@ -93,12 +93,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "ash"
+version = "0.33.1+1.2.186"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4207a81da2432b483058334763ac2381d00342ec3bdf02d413c4d986a610d874"
+dependencies = [
+ "libloading 0.7.0",
+]
+
+[[package]]
 name = "ash-molten"
 version = "0.9.0+1.1.2-f28ab1c"
 source = "git+https://github.com/EmbarkStudios/ash-molten.git?rev=fea270b0c9186b8a45e62215314204f4c16a57b6#fea270b0c9186b8a45e62215314204f4c16a57b6"
 dependencies = [
  "anyhow",
- "ash",
+ "ash 0.32.1",
  "plist",
  "serde",
 ]
@@ -109,7 +118,7 @@ version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2d058436a3a8410c6e9b625c4e763ea6eaba97d771c303fc2c8e3595b666ffa3"
 dependencies = [
- "ash",
+ "ash 0.32.1",
  "raw-window-handle",
  "raw-window-metal",
 ]
@@ -803,7 +812,7 @@ dependencies = [
 name = "example-runner-ash"
 version = "0.4.0-alpha.10"
 dependencies = [
- "ash",
+ "ash 0.33.1+1.2.186",
  "ash-molten",
  "ash-window",
  "cfg-if 1.0.0",
@@ -1153,7 +1162,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a9861ec855acbbc65c0e4f966d761224886e811dc2c6d413a4776e9293d0e5c0"
 dependencies = [
  "arrayvec",
- "ash",
+ "ash 0.32.1",
  "byteorder",
  "core-graphics-types",
  "gfx-hal",
